@@ -199,10 +199,3 @@ h4 {
     color: #1e3a5f;
     font-weight: 600;
 }
-.hero .col-md-6:first-child {
-    padding-left: 0 !important;
-    padding-right: 0;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: -150px;
-}
