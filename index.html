@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShihCC Personal Website</title>
+    <title>石鉦菖｜個人作品集</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -13,17 +13,20 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
 
     <div class="container">
 
         <a class="navbar-brand" href="#">
-            ShihCC PersonalWebsite
+            石鉦菖｜個人作品集
         </a>
 
-        <button class="navbar-toggler"
+        <button type="button" class="navbar-toggler"
                 data-bs-toggle="collapse"
-                data-bs-target="#menu">
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="開啟或關閉導覽選單">
 
             <span class="navbar-toggler-icon"></span>
 
@@ -38,11 +41,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#education">教育背景</a>
+                    <a class="nav-link" href="#projects">作品與成果</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#experience">經歷</a>
+                    <a class="nav-link" href="#award">獎項</a>
                 </li>
 
                 <li class="nav-item">
@@ -50,15 +53,15 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">作品</a>
+                    <a class="nav-link" href="#experience">經歷</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">教育背景</a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="#article">文章</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#award">獎項</a>
                 </li>
 
                 <li class="nav-item">
@@ -77,7 +80,7 @@
 
     <div class="container">
 
-        <div class="row align-items-start g-0">
+        <div class="row align-items-center g-4">
 
             <div class="col-md-4 text-center">
 
@@ -87,14 +90,14 @@
 
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-8">
 
                 <h1>石鉦菖</h1>
 
                 <h4>國立聯合大學資訊管理學系</h4>
 
                 <p>
-                    現任國立聯合大學資訊管理學系系學會副會長，關注企業數位轉型、組織管理與流程優化，<br>希望透過資訊管理知識與溝通協調能力，協助企業提升營運效率並創造更多價值。
+                    現任國立聯合大學資訊管理學系學會副會長，關注企業數位轉型、組織管理與流程優化，希望透過資訊管理知識與溝通協調能力，協助企業提升營運效率並創造更多價值。
                 </p>
 
                 <p style="font-size: 1.1rem; margin-top: 20px;">
@@ -124,42 +127,286 @@
     </p>
 
     <p>
-        進入大學後、我持續參與公共事務，曾擔任義守大學學生議會議員、現任國立聯合大學資訊管理學系系學會副會長，並參與偏鄉教育課輔活動接任活動組組長，我致力於將所學應用於實踐，期盼透過資訊管理專業為社會做出貢獻。
+        進入大學後，我持續參與公共事務，曾擔任義守大學學生議會議員，現任國立聯合大學資訊管理學系學會副會長，並在偏鄉遠距課輔活動中擔任多項重要職務，成長過程中，我受到許多貴人的幫助，也因此希望將這份善意延續下去，透過實際行動與資訊管理專業回饋社會。
     </p>
 
 </section>
 
-<section id="education" class="bg-light py-5">
+<section id="projects" class="container py-5">
+    <h2 class="section-title">作品與成果</h2>
+    <p class="achievements-intro">整理大學以來的專案與競賽、組織參與、教育服務、企業交流與獲獎紀錄，共16項，點擊「查看內容」可開啟視窗，閱讀說明與查看完整圖片。</p>
+    <div class="achievement-group" aria-labelledby="achievement-group-1">
+        <h3 id="achievement-group-1" class="achievement-group-title">專案與競賽</h3>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-01.png" class="card-img-top" alt="三峽老街觀光行銷投資計畫封面" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">國立聯合大學</p>
+                        <h5>青年影響力啟動賽—三峽老街觀光行銷投資計畫</h5>
+                        <p class="achievement-description">參加 2026 Impact Star 青年影響力啟動賽，以三峽老街為主題，分析商業同質化、年輕族群旅遊需求轉變與文化體驗參與不足等問題，提出結合地方故事、遊戲化互動及數位工具的觀光行銷方案。
+透過具參與感的體驗設計，提升老街吸引力與遊客再次造訪意願，期望延長停留時間、增加消費機會，兼顧地方文化特色與商業發展。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看青年影響力啟動賽—三峽老街觀光行銷投資計畫" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-02.png" class="card-img-top" alt="手勢辨識猜拳遊戲操作畫面" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">私立義守大學</p>
+                        <h5>手勢辨識猜拳遊戲</h5>
+                        <p class="achievement-description">運用 Python、MediaPipe 與 OpenCV 開發雙人即時手勢辨識猜拳遊戲，透過攝影機擷取影像，分析手部關鍵點與手指張合狀態，辨識剪刀、石頭、布。
+整合手勢分類、勝負判定與積分管理功能，即時呈現對戰結果，實踐電腦視覺與人機互動技術的應用。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看手勢辨識猜拳遊戲" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-03.png" class="card-img-top" alt="小琉球減塑計畫作品圖片" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">私立義守大學</p>
+                        <h5>小琉球減塑計畫</h5>
+                        <p class="achievement-description">運用冰山理論分析塑膠使用習慣與制度問題，提出結合 LINE 官方帳號、Instagram 社群及環保任務回饋的數位推廣方案，串聯在地減塑資源，提升遊客參與意願，實踐永續發展與社會設計理念。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看小琉球減塑計畫" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-04.png" class="card-img-top" alt="星巴克品牌行銷與數位經營策略探討作品圖片" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">私立義守大學</p>
+                        <h5>星巴克品牌行銷與數位經營策略探討</h5>
+                        <p class="achievement-description">以星巴克為研究對象，探討品牌行銷與數位經營策略，關注品牌定位、消費者互動及數位服務之間的連結。
+透過案例整理與分析，理解企業如何結合品牌特色與數位工具，經營顧客關係並創造消費體驗。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看星巴克品牌行銷與數位經營策略探討" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="achievement-group" aria-labelledby="achievement-group-2">
+        <h3 id="achievement-group-2" class="achievement-group-title">組織領導與活動執行</h3>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-05.jpg" class="card-img-top" alt="資訊管理學系學會副會長經歷照片" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">國立聯合大學</p>
+                        <h5>資訊管理學系學會副會長</h5>
+                        <p class="achievement-description">透過選舉擔任資訊管理學系學會副會長，主導行政管理與活動規劃，負責跨部門溝通、工作協調及組織事務。
+透過日常運作與活動執行，協助團隊釐清分工、掌握進度，累積組織管理與團隊合作經驗。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看資訊管理學系學會副會長" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-06.jpg" class="card-img-top" alt="浪花洗禮共譜青春六系聯合迎新活動照片" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">國立聯合大學</p>
+                        <h5>「浪花洗禮共‧譜青春」六系聯合迎新副召集人</h5>
+                        <p class="achievement-description">擔任「浪花洗禮共‧譜青春」六系聯合迎新副召集人，協助統籌活動規劃與籌備，協調六系需求、整合各系人力與活動資源，推動跨系分工及流程銜接。
+活動期間協調各組工作與資源調度，支援現場執行，累積跨系溝通、資源整合與大型活動籌辦經驗。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看「浪花洗禮共‧譜青春」六系聯合迎新副召集人" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-07.jpg" class="card-img-top" alt="國立聯合大學社團博覽會協辦活動照片" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">國立聯合大學</p>
+                        <h5>社團博覽會協辦</h5>
+                        <p class="achievement-description">資訊管理學系學會為社團博覽會協辦單位，活動當天負責參與者簽到與簽退、餐點發放、抽獎作業及闖關任務引導。
+透過現場服務與流程協調，協助活動順利進行，累積人員引導、行政支援與活動執行經驗。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看社團博覽會協辦" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-08.png" class="card-img-top achievement-image-top" alt="第十六屆學生議會議員經歷照片" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">私立義守大學</p>
+                        <h5>第十六屆學生議會議員</h5>
+                        <p class="achievement-description">代表資訊管理學系擔任第十六屆學生議會議員，參與學生自治事務及校務議題討論，關注學生意見與校園需求。
+透過議會參與，累積公共議題討論、意見表達與溝通協調經驗。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看第十六屆學生議會議員" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="achievement-group" aria-labelledby="achievement-group-3">
+        <h3 id="achievement-group-3" class="achievement-group-title">教育服務</h3>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-09.jpg" class="card-img-top" alt="偏鄉遠距課輔活動組組長活動照片" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">國立聯合大學</p>
+                        <h5>偏鄉遠距課輔活動組組長</h5>
+                        <p class="achievement-description">擔任偏鄉遠距課輔活動組組長，主導組織內活動規劃與籌備工作，負責人力調度及現場指揮。
+透過工作分配與流程安排，協調團隊完成活動任務，支持大學伴與小學伴的交流及互動。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看偏鄉遠距課輔活動組組長" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-10.jpg" class="card-img-top" alt="偏鄉遠距課輔帶班老師活動照片" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">國立聯合大學</p>
+                        <h5>偏鄉遠距課輔帶班老師</h5>
+                        <p class="achievement-description">負責偏鄉遠距課輔班級管理，統籌大學伴與小學伴的課程協調及教學支援。
+維持課程秩序、處理突發狀況、檢查與排除設備異常，並進行系統問題回報，確保課輔順利進行，累積班級管理、技術支援與現場應變經驗。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看偏鄉遠距課輔帶班老師" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-11.JPG" class="card-img-top" alt="聯大偏鄉課輔相見歡主持" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">國立聯合大學</p>
+                        <h5>偏鄉遠距課輔相見歡主持</h5>
+                        <p class="achievement-description">擔任偏鄉遠距課輔相見歡活動主持，負責活動串場、流程銜接與時間掌握。
+透過清楚的引導與現場互動，營造溫馨、融洽的氛圍，協助大學伴與小學伴建立連結，累積公開表達與臨場應變經驗。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看偏鄉遠距課輔相見歡主持" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-12.jpg" class="card-img-top" alt="教育部數位學伴計畫相見歡隊輔活動照片" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">國立聯合大學</p>
+                        <h5>教育部數位學伴計畫相見歡隊輔</h5>
+                        <p class="achievement-description">參與教育部數位學伴計畫相見歡活動籌備並擔任隊輔，帶領偏鄉孩童參與闖關，說明關卡任務、維持隊伍秩序並掌握活動進度。
+透過陪伴與鼓勵提升孩童的參與意願，協助團隊合作完成任務，最終帶領隊伍獲得闖關活動第二名。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看教育部數位學伴計畫相見歡隊輔" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="achievement-group" aria-labelledby="achievement-group-4">
+        <h3 id="achievement-group-4" class="achievement-group-title">企業交流</h3>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-13.jpg" class="card-img-top" alt="泉州市鯉城雅思文具跨境商務交流與企業合作照片" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">泉州市鯉城雅思文具</p>
+                        <h5>跨境商務交流與企業合作｜泉州市鯉城雅思文具</h5>
+                        <p class="achievement-description">參與中國文具企業之商務往來，接觸產品採購、商品經銷及委託代工（OEM）等合作模式，了解不同合作方式的運作流程與溝通需求。
+透過實務交流，深化對文具產業採購與經銷流程的認識，累積跨境供應鏈與企業合作實務經驗。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看跨境商務交流與企業合作｜泉州市鯉城雅思文具" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="achievement-group" aria-labelledby="achievement-group-5">
+        <h3 id="achievement-group-5" class="achievement-group-title">獲獎與榮譽</h3>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-14.jpg" class="card-img-top" alt="115年苗青創想家黑客松競賽最佳潛力星獲獎照片" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">國立聯合大學</p>
+                        <h5>115年「苗青創想家」黑客松競賽—入圍決賽暨「最佳潛力星」獎</h5>
+                        <p class="achievement-description">以「客庄玩市集」為提案，結合苗栗四季農產與客家文化，規劃可嵌入既有節慶的移動市集模式。
+透過 LINE 闖關集點、四季集章護照及攤商核銷機制，串聯文化體驗與在地消費，期望提升跨季回訪意願，帶動周邊觀光。
+提案入圍115年「苗青創想家」黑客松競賽決賽，並榮獲「最佳潛力星」獎。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看115年「苗青創想家」黑客松競賽—入圍決賽暨「最佳潛力星」獎" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-15.jpg" class="card-img-top" alt="私立義守大學資訊管理學系優秀新生申請入學獎學金證明" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">私立義守大學</p>
+                        <h5>資訊管理學系優秀新生申請入學獎學金</h5>
+                        <p class="achievement-description">透過申請入學錄取資訊管理學系，符合系上優秀新生申請入學獎學金標準，並依規定完成切結書簽署程序，獲頒資訊管理學系專屬的新生獎學金。
+以此為動力，持續投入資訊管理專業學習，結合程式設計、組織管理與實務參與，累積跨領域應用能力。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看資訊管理學系優秀新生申請入學獎學金" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100 achievement-card">
+                    <img src="images/achievement-16.png" class="card-img-top" alt="私立義守大學優秀新生住宿獎學金證明" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <p class="achievement-meta">私立義守大學</p>
+                        <h5>優秀新生住宿獎學金</h5>
+                        <p class="achievement-description">學測成績達優秀新生住宿獎學金標準，獲頒住宿獎學金，展現高中階段的學習成果與升學準備。
+這份肯定也成為持續精進的動力，期許自己以自律、積極的態度投入大學課業與校園事務，累積專業能力及實務經驗。</p>
+                        <button type="button" class="project-detail btn btn-outline-primary mt-auto align-self-start" aria-label="查看優秀新生住宿獎學金" aria-haspopup="dialog" aria-controls="image-viewer">查看內容</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="award" class="container py-5">
+
+    <h2 class="section-title">
+        獲獎與榮譽
+    </h2>
+
+    <ul>
+        <li>國立聯合大學時期：115年「苗青創想家」黑客松競賽入圍決賽並榮獲「最佳潛力星」獎</li>
+        <li>義守大學時期：資訊管理學系優秀新生申請入學獎學金、優秀新生住宿獎學金</li>
+        <li>僑泰高中時期：熱心服務成績優良獎</li>
+        <li>成功國中時期：特殊貢獻獎、會長獎</li>
+        <li>塗城國小時期：體育獎、服務獎、環保楷模獎</li>
+    </ul>
+
+</section>
+
+<section id="skills" class="bg-light py-5">
 
     <div class="container">
 
         <h2 class="section-title">
-            教育背景
+            專業技能
         </h2>
 
-        <ul class="list-group">
+        <div class="row g-4">
 
-            <li class="list-group-item">
-                國立聯合大學資訊管理學系－就讀中
-            </li>
+            <div class="col-md-6">
+                <h5>C++</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width:75%">75%</div>
+                </div>
 
-            <li class="list-group-item">
-                私立義守大學資訊管理學系－優秀新生申請入學獎學金
-            </li>
+                <h5>Python</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width:80%">80%</div>
+                </div>
+            </div>
 
-            <li class="list-group-item">
-                台中市私立僑泰高級中學－熱心服務成績優良獎
-            </li>
+            <div class="col-md-6">
 
-            <li class="list-group-item">
-                台中市立成功國民中學－會長獎、特殊貢獻獎
-            </li>
+                <h5>PHP / MySQL</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width:75%">75%</div>
+                </div>
 
-            <li class="list-group-item">
-                台中市立塗城國民小學－體育獎、服務獎、環保楷模獎
-            </li>
+                <h5>HTML / CSS</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width:85%">85%</div>
+                </div>
 
-        </ul>
+            </div>
+
+        </div>
 
     </div>
 
@@ -171,7 +418,7 @@
         經歷與幹部經驗
     </h2>
 
-    <h4 class="mt-4 mb-3">僑泰高中時期</h4>
+    <h4 class="mt-4 mb-3">國立聯合大學時期</h4>
 
     <div class="row">
 
@@ -181,10 +428,11 @@
 
                 <div class="card-body">
 
-                    <h5>整潔糾察隊副隊長</h5>
+                    <h5>資訊管理學系學會副會長</h5>
 
                     <p>
-                        負責校園環境管理與清潔檢查工作及隊員招募培訓。
+                        主導系學會行政管理與活動規劃，
+                        負責跨部門協調與組織發展。
                     </p>
 
                 </div>
@@ -199,10 +447,11 @@
 
                 <div class="card-body">
 
-                    <h5>羽毛球A社社長</h5>
+                    <h5>偏鄉遠距課輔活動組組長</h5>
 
                     <p>
-                        規劃社團活動與訓練課程、進行社團管理，組織比賽與交流活動。
+                        主導課輔的各項活動與籌備工作，
+                        並進行人力調度與活動現場指揮。
                     </p>
 
                 </div>
@@ -217,11 +466,10 @@
 
                 <div class="card-body">
 
-                    <h5>整潔糾察隊評分委員</h5>
+                    <h5>六系聯合迎新副召集人</h5>
 
                     <p>
-                        參與班級衛生評分工作，
-                        確保評審公平性與標準一致。
+                        協助統籌六系聯合迎新的活動規劃與籌備工作，負責跨系溝通、工作分配與流程協調，並支援活動現場執行。
                     </p>
 
                 </div>
@@ -236,10 +484,11 @@
 
                 <div class="card-body">
 
-                    <h5>撞球飛鏢社社長</h5>
+                    <h5>偏鄉遠距課輔相見歡主持人</h5>
 
                     <p>
-                        領導社團成員開展多項活動、進行社團管理，建立社團文化與凝聚力。
+                        負責相見歡活動主持工作與時間控制，
+                        營造溫馨、融洽的氛圍。
                     </p>
 
                 </div>
@@ -254,10 +503,10 @@
 
                 <div class="card-body">
 
-                    <h5>交通糾察隊中控</h5>
+                    <h5>偏鄉遠距課輔帶班老師</h5>
 
                     <p>
-                        負責校園交通秩序維護與安全管理，指揮交通與引導校車進出。
+                        負責偏鄉遠距課輔班級管理，統籌大學伴與小學伴的課程協調及教學支援，確保課輔順利進行。
                     </p>
 
                 </div>
@@ -272,29 +521,11 @@
 
                 <div class="card-body">
 
-                    <h5>校園改善專案負責人</h5>
+                    <h5>教育部數位學伴計畫相見歡隊輔</h5>
 
                     <p>
-                        主導改善校園回收場與校車場人為問題，
-                        優化動線設計與安全管理措施。
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-6 mb-3">
-
-            <div class="card h-100">
-
-                <div class="card-body">
-
-                    <h5>升學演講與經驗分享講師</h5>
-
-                    <p>
-                        回母校進行升學探討演講，分享高中學習經驗與生涯規劃。
+                        參與教育部數位學伴計畫相見歡活動與籌備，擔任活動隊輔，
+                        帶領偏鄉孩童闖關互動與學習。
                     </p>
 
                 </div>
@@ -347,7 +578,7 @@
 
     </div>
 
-    <h4 class="mt-5 mb-3">國立聯合大學時期</h4>
+    <h4 class="mt-5 mb-3">僑泰高中時期</h4>
 
     <div class="row">
 
@@ -357,11 +588,10 @@
 
                 <div class="card-body">
 
-                    <h5>資管系學會副會長</h5>
+                    <h5>整潔糾察隊副隊長</h5>
 
                     <p>
-                        主導系學會行政管理與活動規劃，
-                        負責跨部門協調與組織發展。
+                        負責校園環境管理、清潔檢查及隊員招募與培訓，並參與班級衛生評分，確保評分公平與標準一致。
                     </p>
 
                 </div>
@@ -376,11 +606,28 @@
 
                 <div class="card-body">
 
-                    <h5>教育部數位學伴計畫隊輔</h5>
+                    <h5>羽毛球A社社長</h5>
 
                     <p>
-                        參與教育部數位學伴計畫相見歡活動與籌備，擔任活動隊輔，
-                        帶領偏鄉孩童闖關互動與學習。
+                        規劃社團活動與訓練課程、進行社團管理，組織比賽與交流活動。
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6 mb-3">
+                                                                      
+            <div class="card h-100">
+
+                <div class="card-body">
+
+                    <h5>交通糾察隊中控</h5>
+
+                    <p>
+                        負責校園交通秩序維護與安全管理，指揮交通與引導校車進出。
                     </p>
 
                 </div>
@@ -395,11 +642,10 @@
 
                 <div class="card-body">
 
-                    <h5>偏鄉課輔活動組組長</h5>
+                    <h5>撞球飛鏢社社長</h5>
 
                     <p>
-                        主導課輔的各項活動與工作，
-                        並進行人力調度與活動現場指揮。
+                        領導社團成員開展多項活動、進行社團管理，建立社團文化與凝聚力。
                     </p>
 
                 </div>
@@ -414,11 +660,29 @@
 
                 <div class="card-body">
 
-                    <h5>偏鄉課輔相見歡主持人</h5>
+                    <h5>校園改善專案負責人</h5>
 
                     <p>
-                        負責相見歡活動主持工作與時間控制，
-                        營造溫馨、融洽的氛圍。
+                        主導改善校園回收場與校車場人為問題，
+                        優化動線設計與安全管理措施。
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6 mb-3">
+
+            <div class="card h-100">
+
+                <div class="card-body">
+
+                    <h5>升學演講與經驗分享講師</h5>
+
+                    <p>
+                        回母校進行升學探討演講，分享高中學習經驗與生涯規劃。
                     </p>
 
                 </div>
@@ -431,103 +695,37 @@
 
 </section>
 
-<section id="skills" class="bg-light py-5">
+<section id="education" class="bg-light py-5">
 
     <div class="container">
 
         <h2 class="section-title">
-            專業技能
+            教育背景
         </h2>
 
-        <div class="row">
+        <ul class="list-group">
 
-            <div class="col-md-6">
-                <h5>C++</h5>
-                <div class="progress mb-3">
-                    <div class="progress-bar" style="width:75%">75%</div>
-                </div>
+            <li class="list-group-item">
+                國立聯合大學資訊管理學系－就讀中
+            </li>
 
-                <h5>Python</h5>
-                <div class="progress mb-3">
-                    <div class="progress-bar" style="width:80%">80%</div>
-                </div>
-            </div>
+            <li class="list-group-item">
+                私立義守大學資訊管理學系
+            </li>
 
-            <div class="col-md-6">
+            <li class="list-group-item">
+                台中市私立僑泰高級中學
+            </li>
 
-                <h5>PHP / MySQL</h5>
-                <div class="progress mb-3">
-                    <div class="progress-bar" style="width:75%">75%</div>
-                </div>
+            <li class="list-group-item">
+                台中市立成功國民中學
+            </li>
 
-                <h5>HTML / CSS</h5>
-                <div class="progress mb-3">
-                    <div class="progress-bar" style="width:85%">85%</div>
-                </div>
+            <li class="list-group-item">
+                台中市立塗城國民小學
+            </li>
 
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="projects" class="container py-5">
-
-    <h2 class="section-title">
-        專案作品
-    </h2>
-
-    <div class="row">
-
-        <div class="col-md-6">
-
-            <div class="card">
-
-                <img src="images/project1.png"
-                     class="card-img-top">
-
-                <div class="card-body">
-
-                    <h5>手勢辨識猜拳遊戲</h5>
-
-                    <p>
-                        使用 Python、MediaPipe、OpenCV 開發的雙人互動式遊戲，透過攝影機
-                        實時辨識玩家手勢（剪刀、石頭、布）
-                        使用手部關鍵點分析判斷手指張合情形，
-                        程式自動判斷勝負並顯示積分，
-                        實踐了邏輯判斷與電腦視覺技術。
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-6">
-
-            <div class="card">
-
-                <img src="images/project2.png"
-                     class="card-img-top">
-
-                <div class="card-body">
-
-                    <h5>個人網站</h5>
-
-                    <p>
-                        本網站使用 HTML、CSS 與 Bootstrap 框架開發，採用響應式網頁設計（RWD），
-                        可依不同裝置螢幕尺寸自動調整版面配置，網站內容包含自我介紹、教育背景、<br>
-                        經歷與幹部經驗、專業技能、專案作品、文章分享、獲獎榮譽及活動紀錄等內容。
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
+        </ul>
 
     </div>
 
@@ -564,22 +762,6 @@
 
 </section>
 
-<section id="award" class="container py-5">
-
-    <h2 class="section-title">
-        獲獎與榮譽
-    </h2>
-
-    <ul>
-        <li>義守大學資訊管理學系優秀新生申請入學獎學金</li>
-        <li>義守大學優秀新生住宿獎學金</li>
-        <li>僑泰高中熱心服務成績優良獎</li>
-        <li>成功國中特殊貢獻獎</li>
-        <li>成功國中會長獎</li>
-    </ul>
-
-</section>
-
 <section id="activity" class="bg-light py-5">
 
     <div class="container">
@@ -588,20 +770,29 @@
             活動照片
         </h2>
 
-        <div class="row">
+        <div class="row g-4">
 
             <div class="col-md-4">
-                <img src="images/activity1.jpg" class="img-fluid rounded shadow">
+                <button type="button" class="image-preview rounded shadow" aria-label="放大查看回母校升學分享照片" aria-haspopup="dialog">
+                    <img src="images/activity1.jpg" class="img-fluid rounded" alt="回母校進行升學探討與經驗分享演講">
+                    <span class="image-preview-hint">點擊放大</span>
+                </button>
                 <p class="text-center mt-2">回母校進行升學探討與經驗分享演講</p>
             </div>
 
             <div class="col-md-4">
-                <img src="images/activity2.jpg" class="img-fluid rounded shadow">
-                <p class="text-center mt-2">聯大偏鄉課輔相見歡主持</p>
+                <button type="button" class="image-preview rounded shadow" aria-label="放大查看聯大資管系學會迎新主持照片" aria-haspopup="dialog">
+                    <img src="images/activity2.jpg" class="img-fluid rounded" alt="聯大資管系學會迎新主持">
+                    <span class="image-preview-hint">點擊放大</span>
+                </button>
+                <p class="text-center mt-2">聯大資管系學會迎新主持</p>
             </div>
 
             <div class="col-md-4">
-                <img src="images/activity3.jpg" class="img-fluid rounded shadow">
+                <button type="button" class="image-preview rounded shadow" aria-label="放大查看偏鄉課輔團體照" aria-haspopup="dialog">
+                    <img src="images/activity3.jpg" class="img-fluid rounded" alt="聯大偏鄉課輔活動團體照">
+                    <span class="image-preview-hint">點擊放大</span>
+                </button>
                 <p class="text-center mt-2">聯大偏鄉課輔活動團體照</p>
             </div>
 
@@ -611,15 +802,33 @@
 
 </section>
 
+<dialog id="image-viewer" class="image-viewer" aria-labelledby="image-viewer-title">
+    <div class="image-viewer-header">
+        <h2 id="image-viewer-title"></h2>
+        <form method="dialog">
+            <button type="submit" class="image-viewer-close" aria-label="關閉圖片視窗" autofocus>×</button>
+        </form>
+    </div>
+    <img id="image-viewer-image" alt="">
+    <p id="image-viewer-description" class="image-viewer-description" hidden></p>
+</dialog>
+
 <footer class="bg-dark text-white text-center p-4">
 
-    <p>
-        © <span id="year"></span> ShihCC Personal Website
+    <p class="mb-3">
+        Contact：
+        <a class="footer-email" href="mailto:jarekshih02260830@gmail.com">jarekshih02260830@gmail.com</a>
+    </p>
+
+    <p class="mb-0">
+        © <span id="year"></span> 石鉦菖｜個人作品集
     </p>
 
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/image-viewer.js"></script>
+<script src="js/navigation.js"></script>
 
 <script>
     document.getElementById("year").textContent =
